@@ -100,6 +100,10 @@ async def on_message(message):
         embed = discord.Embed(color=0xFF4C4C)
         embed.add_field(name="아반", value="왜 불렀나, 자네", inline=False)
         await message.channel.send(embed=embed)
+    if message.content.startswith("아반 죽어"):
+        embed = discord.Embed(color=0xFF4C4C)
+        embed.add_field(name="죽으라고?", value="싫어", inline=False)
+        await message.channel.send(embed=embed)
 
     if message.content.startswith("아반 캡챠"):
         Image_captcha = ImageCaptcha()
