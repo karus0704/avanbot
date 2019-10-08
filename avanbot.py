@@ -2,6 +2,7 @@ import discord
 import datetime
 from captcha.image import ImageCaptcha
 import random
+import os
 
 client = discord.Client()
 
@@ -120,5 +121,5 @@ async def on_message(message):
         else:
             await message.channel.send("풉ㅋ 틀렸다고 전해라~")
 
-
-client.run("NjMxMDEyMTQyNTE0MDQ0OTI5.XZwp6A.kTzhnykMekZ00temqAaME-oMTyA")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
