@@ -30,7 +30,7 @@ async def on_message(message):
     if message.content.startswith("아반 도움말"):
         embed = discord.Embed(color=0xFF4C4C)
         embed.add_field(name="< 아반 도움말 >\n\n정보", value="`아반 이메일`, `아반 만든이`, `아반 누구야`, `아반 서버주소`, `아반 프로필`", inline=False)
-        embed.add_field(name="재미", value="`아반 안녕`, `아반 바보`, `아반 잘생겼다`, `아반 천재다`, `아반 잘가`, `아반 못생겼다`, `아반 ㅉㅉ`, `아반 한심하다`, `아반`", inline=False)
+        embed.add_field(name="재미", value="`아반 안녕`, `아반 바보`, `아반 잘생겼다`, `아반 천재다`, `아반 잘가`, `아반 못생겼다`, `아반 ㅉㅉ`, `아반 한심하다`, `아반`, `아반 죽어`", inline=False)
         embed.add_field(name="미니게임", value="`아반 캡챠`", inline=False)
         await message.channel.send(embed=embed)
 
