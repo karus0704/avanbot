@@ -96,7 +96,7 @@ async def on_message(message):
         embed.add_field(name="ㅉㅉ?", value="짱이라고? 알겠엉💖", inline=False)
         await message.channel.send(embed=embed)
         
-    if message.content.startswith("아반"):
+    if message.content.startswith("아반아"):
         embed = discord.Embed(color=0xFF4C4C)
         embed.add_field(name="아반", value="왜 불렀나, 자네", inline=False)
         await message.channel.send(embed=embed)
